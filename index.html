@@ -18,9 +18,14 @@
         .looping-background-video p.text-white {
             color: white; /* Color for "BROKEN LIVES" */
         }      
-    </style>
-   
+        .dark-background {
+          background-color: rgba(0, 0, 0, 0.5); /* Dark background for the content section */
+          color: #fff; /* White text color for better contrast */
+          padding: 20px; /* Padding to create space between content and background */
+          margin-top: 20px; /* Margin to create space between header and content */
+        }
     
+    </style>
 
     <title>Multimedia Project</title>
 
@@ -49,21 +54,33 @@
   </head>
   <body>
 
+    <! -- content section -->
+    <article role="main">
+
+      <div class="containter mt-5">
+
+        <! -- article header -->
+        <header class="my-5 row justify-content-center">
+          <div class="col-12 col-md-10 text-center">
+            <h2>American Mining Giant Displaces Farmers, Ghana Government Looks Away</h2>
+            <p class="small pt-5">By Charles Ayitey</p>
+          </div>
+        </header>
 
     <!-- main banner -->
     <header role="banner" class="looping-background-video d-flex flex-column align-items-center justify-content-center" style="position: relative;">
 
-      <h1 class="text-gold text-center display-1" style="display: none;">GOLD RUSH, BROKEN LIVES</h1>
-      <p class="text-white" style="display: none;">Expansion of US mine in Ghana sparks compensation disputes and environmental fears</p>
 <!-- re-editing the video muted side-->
+      <div style="position:relative; max-width: 100%; height: auto;">
          <video muted playsinline autoplay loop style="max-width: 100%; height: auto;">
         <source src="assets/example-media/Security VS Farmer.mp4" type="video/mp4">
         <img src="" alt="fallback">
       </video>
-     
-
+     <! -- Play/paude button -->
+        <button id="playPauseBtn" style="position: absolute; bottom: 10px; right: 10px; background: transparent; border: none; color: white; font-size: 24px; cursor: pointer; ">>▶️</button>  
+      </div>
     </header>
-
+<! -- Script for play/pause button -->
 <script>
   const video = document.getElementById("backgroundVideo");
   const playPauseBtn = document.getElementById("playPauseBtn");
