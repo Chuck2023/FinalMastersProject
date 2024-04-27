@@ -63,6 +63,60 @@
     }
     </script>
 
+    </head>
+<body>
+
+<!-- content section -->
+<article role="main">
+
+    <!-- article header -->
+    <header class="my-5 row justify-content-center">
+        <div class="col-12 col-md-10 text-center">
+            <h2>American Mining Giant Displaces Farmers, Ghana Government Looks Away</h2>
+            <p class="small pt-5">By Charles Ayitey</p>
+        </div>
+    </header>
+
+    <div class="container mt-5">
+
+        <!-- main banner -->
+        <header role="banner" class="looping-background-video d-flex flex-column align-items-center justify-content-center" style="position: relative;">
+
+            <!-- re-editing the video muted side -->
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <video id="backgroundVideo" muted playsinline autoplay loop style="width: 100%;">
+                        <source src="assets/example-media/Security VS Farmer.mp4" type="video/mp4">
+                        <img src="" alt="fallback">
+                    </video>
+                </div>
+            </div>
+            <!-- Play/pause button -->
+            <button id="playPauseBtn" style="position: absolute; bottom: 10px; right: 10px; background: transparent; border: none; color: white; font-size: 24px; cursor: pointer;">▶️</button>
+        </header>
+
+    </div> <!-- End of container -->
+
+</article> <!-- End of content section -->
+
+<!-- Script for play/pause button -->
+<script>
+    const video = document.getElementById("backgroundVideo");
+    const playPauseBtn = document.getElementById("playPauseBtn");
+
+    playPauseBtn.addEventListener("click", function () {
+        if (video.paused) {
+            video.play();
+            playPauseBtn.textContent = "❚❚";
+        } else {
+            video.pause();
+            playPauseBtn.textContent = "▶️";
+        }
+    });
+</script>
+
+</body>
+</html>
 
         <!-- article header -->
         <header class="my-5 row justify-content-center">
