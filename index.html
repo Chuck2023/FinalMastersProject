@@ -18,26 +18,8 @@
         .looping-background-video p.text-white {
             color: white; /* Color for "BROKEN LIVES" */
         }      
-        .dark-background {
-          background-color: rgba(0, 0, 0, 0.5); /* Dark background for the content section */
-          color: #fff; /* White text color for better contrast */
-          padding: 20px; /* Padding to create space between content and background */
-          margin-top: 20px; /* Margin to create space between header and content */
-        }
-
-      /* Center the video */
-      .video-container {
-        display:flex;
-        justify-content: center;
-
-      }
-
-      .video-wrapper {
-        max-width:100;
-
-      }
-    
     </style>
+    
 
     <title>Multimedia Project</title>
 
@@ -66,59 +48,26 @@
     </head>
 <body>
 
-<!-- content section -->
-<article role="main">
-
-    <!-- article header -->
-    <header class="my-5 row justify-content-center">
-        <div class="col-12 col-md-10 text-center">
-            <h2>American Mining Giant Displaces Farmers, Ghana Government Looks Away</h2>
-            <p class="small pt-5">By Charles Ayitey</p>
-        </div>
-    </header>
-
-    <div class="container mt-5">
-
         <!-- main banner -->
         <header role="banner" class="looping-background-video d-flex flex-column align-items-center justify-content-center" style="position: relative;">
 
+          <h1 class="text-gold text-center display-1">GOLD RUSH, BROKEN LIVES</h1>
+      <p class="text-white">Expansion of US mine in Ghana sparks compensation disputes and environmental fears</p>
+          
             <!-- re-editing the video muted side -->
-            <div class="video-container">
-                <div class="video-wrapper">
-                    <video id="backgroundVideo" muted playsinline autoplay loop style="width: 100%;">
-                        <source src="assets/example-media/Security VS Farmer.mp4" type="video/mp4">
-                        <img src="" alt="fallback">
-                    </video>
-                </div>
-            </div>
-            <!-- Play/pause button -->
-            <button id="playPauseBtn" style="position: absolute; bottom: 10px; right: 10px; background: transparent; border: none; color: white; font-size: 24px; cursor: pointer;">▶️</button>
+            <video muted playsinline autoplay loop style="max-width: 100%; height: auto;">
+        <source src="assets/example-media/tdrone1.mp4" type="video/mp4">
+        <img src="" alt="fallback">
+      </video>
         </header>
 
-    </div> <!-- End of container -->
 
-</article> <!-- End of content section -->
+  <!-- content section -->
+  <article role="main">
+    
+    <div class="container mt-5">
 
-<!-- Script for play/pause button -->
-<script>
-    const video = document.getElementById("backgroundVideo");
-    const playPauseBtn = document.getElementById("playPauseBtn");
-
-    playPauseBtn.addEventListener("click", function () {
-        if (video.paused) {
-            video.play();
-            playPauseBtn.textContent = "❚❚";
-        } else {
-            video.pause();
-            playPauseBtn.textContent = "▶️";
-        }
-    });
-</script>
-
-</body>
-</html>
-
-        <!-- article header -->
+      <!-- article header -->
         <header class="my-5 row justify-content-center">
           <div class="col-12 col-md-10 text-center">
             <h2>American Mining Giant Displaces Farmers, Ghana Government Looks Away</h2>
@@ -126,11 +75,9 @@
           </div>
         </header>
 
-
-        <div class="row justify-content-center">
+      <div class="row justify-content-center">
           <div class="col-12 col-md-8 col-lg-6">
 
-            
 
             <p>Abraham Mensah, a 48-year-old teak farmer in Tekyire, felt cheated when the government seized his 5-acre plantation in July 2022. Tekyire is one of the five communities impacted by Newmont's expansion plans. </p>
 
@@ -449,9 +396,7 @@ In 2022, Newmont razed his teak farm and nine fish ponds, falsely labeling the 6
         </div>
         
         
-        
-        
-        <!-- EXAMPLE OF A MODAL -->
+<!-- EXAMPLE OF A MODAL -->
         
         <!-- Button to trigger the modal -->
         <button type="button" class="btn btn-primary mx-auto d-block" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -476,6 +421,8 @@ In 2022, Newmont razed his teak farm and nine fish ponds, falsely labeling the 6
         <!-- END POPUP MODAL -->
         
         
+       
+        
         
         
         <div class="row justify-content-center mt-4">
@@ -489,8 +436,7 @@ In 2022, Newmont razed his teak farm and nine fish ponds, falsely labeling the 6
         
       
       
-        
-      <!-- EXAMPLE OF A BACKGROUND SCROLLER -->
+        <!-- EXAMPLE OF A BACKGROUND SCROLLER -->
 
       <!-- instructions: Change background image in .background-image-changer first. Then, copy and paste any additional blocks of text. Then change images on the data-step="" attributes of each block. -->
 
@@ -706,4 +652,4 @@ In 2022, Newmont razed his teak farm and nine fish ponds, falsely labeling the 6
       });
     </script>
   </body>
-</html>
+</html>      
