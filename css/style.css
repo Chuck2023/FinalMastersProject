@@ -23,7 +23,12 @@ h1,h2,h3,h4,h5{
   background-position: center;
 }
 
-
+/** Added the dark background styles here **/
+.dark-background {
+	background-color: rgba(0,0,0, 0.6); /* Dark background color */
+	color: #fff; /* White text color for contrast */
+	padding: 20px; /* Padding for better readability */
+}
 
 
 /** expand utlities/sizing to include 25 and 50 **/
