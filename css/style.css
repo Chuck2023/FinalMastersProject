@@ -54,7 +54,7 @@ h1,h2,h3,h4,h5{
 	width: 100vw;
 	min-height: 100vh; /* Changed to min-height */
 	overflow: hidden;
-	background-color: rgba(0,0,0,0.6); 	/* shade over video for foreground-background separation */
+	background-color: rgba(0,0,0,0.8); 	/* shade over video for foreground-background separation */
 	color: #fff; 						/* make text color white */
 }
 
