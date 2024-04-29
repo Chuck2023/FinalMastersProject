@@ -72,19 +72,22 @@ h1,h2,h3,h4,h5{
 	}
 
 /* Figcaption Styles */
-	figcaption {
+figcaption {
 		color: white;
 		text-align: center;
 		margin-top: 10px;
 		position: relative; /* Ensure it's positioned relative to the figure */
 }
 
-	#videoCaption {
+/* Specificity Boost and Positioning */
+#videoCaption {
 		color: white;
 		text-align: center;
 		margin-top: 10px;
-		position: relative;
-	}
+		position: absolute !important;
+	        bottom: 20px;
+	
+}
 
 /** Sticky for scrollytelling layout **/
 [data-sticky-graphic] {
