@@ -90,7 +90,7 @@ figcaption {
 		margin-top: 10px;
 		position: absolute !important;
 	        bottom: 20px;
-	
+	        margin-bottom: 10px;	
 }
 
 /** Sticky for scrollytelling layout **/
