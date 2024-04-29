@@ -79,6 +79,12 @@ h1,h2,h3,h4,h5{
 		position: relative; /* Ensure it's positioned relative to the figure */
 }
 
+	#videoCaption {
+		color: white;
+		text-align: center;
+		margin-top: 10px;
+		position: relative;
+	}
 
 /** Sticky for scrollytelling layout **/
 [data-sticky-graphic] {
